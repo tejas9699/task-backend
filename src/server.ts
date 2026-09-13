@@ -17,6 +17,7 @@ app.get('/api/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 
